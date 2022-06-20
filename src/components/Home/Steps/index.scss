@@ -1,0 +1,36 @@
+.step-items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  @media (max-width: 575px){
+    display: block;
+    text-align: center;
+  }
+  i {
+    font-size: 70px;
+    color: #eea94e
+  }
+  h3{
+    margin-top: 15px;
+    font-size: 18px;
+  }
+  .st-quality{
+    text-align: center;
+  }
+  .st-care{
+    text-align: center;
+    margin-top: 80px;
+  }
+  .st-delivery{
+    text-align: center;
+    margin-top: 122px;
+  }
+  .st-lock{
+    text-align: center;
+    margin-top: 80px;
+  }
+  .st-support{
+    text-align: center;
+  }
+}
