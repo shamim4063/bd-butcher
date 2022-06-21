@@ -12,18 +12,24 @@ interface ItemType {
   name: string;
 }
 
-const Items: React.FC<any> = () => {
-  
-  const ALL_ITEMS: ItemType[] = [...BeefItems, ...MuttonItems, ...ChickenItems];
+interface ItemsProps {
+  items: Array<ItemType>;
+  title: string;
+}
 
+const Items: React.FC<ItemsProps> = (props: ItemsProps) => {
+  const { items, title } = props;
   return (
     <>
       <div className="row selling-items">
         <div className="col-12">
-          <h3>OUR FEATURED FROZEN CHICKEN, BEEF AND MUTTON</h3> <br />
+          <h3>{title}</h3> <br />
         </div>
-        {ALL_ITEMS.map((item: ItemType, index:number) => (
-          <div className="col-xl-3 col-lg-4 col-sm-6 mb-4" key={index}>
+        {items?.map((item: ItemType, index: number) => (
+          <div
+            className="col-xl-3 col-lg-4 col-sm-6 mb-4 card-item"
+            key={index}
+          >
             <Card>
               <Card.Img variant="top" src={item.image} alt="beef1" />
               <Card.Body>

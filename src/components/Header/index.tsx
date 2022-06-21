@@ -7,21 +7,23 @@ import "./index.scss";
 
 const Header: React.FC<any> = (props: any) => {
   return (
-    <> 
-    <Navbar expand="lg" fixed="top" className="butcher-header"> 
-        <Navbar.Brand href="/">
-          <Image src={logo}/>
+    <>
+      <Navbar expand="lg" fixed="top" className="butcher-header">
+        <Navbar.Brand>
+          <Link to="/">
+            <Image src={logo} />
+          </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className="butcher-header-link" id="basic-navbar-nav">
-          <Nav className="me-auto"> 
-            <Nav.Link href="/frozen-chicken">Frozen Chicken</Nav.Link>
-            <Nav.Link href="/frozen-beef">Frozen Beef</Nav.Link>
-            <Nav.Link href="/frozen-mutton">Frozen Mutton</Nav.Link>
-            <Nav.Link href="/contact-us">Contact Us</Nav.Link> 
+          <Nav className="me-auto">
+            <Link to="/frozen-chicken"> Frozen Chicken</Link>
+            <Link to="/frozen-beef">Frozen Beef</Link>
+            <Link to="/frozen-mutton">Frozen Mutton</Link>
+            <Link to="/contact-us">Contact Us</Link>
           </Nav>
-        </Navbar.Collapse> 
-    </Navbar>
+        </Navbar.Collapse>
+      </Navbar>
     </>
   );
 };
