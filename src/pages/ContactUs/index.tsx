@@ -17,12 +17,16 @@ const ContactUs: React.FC<any> = (props: any) => {
 
   const onSend = async (event: React.FormEvent) => {
     event.preventDefault();
-    console.log(contactInfo);
+    setContacInfo({
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    });
     try {
-      const result = await contactService.submitSupportForm(contactInfo);
-      console.log(result);
+      await contactService.submitSupportForm(contactInfo);
     } catch (error) {
-      console.log(error);
+      // console.log(error);
     }
     setShowAlert(true);
     closeAlert();
