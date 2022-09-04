@@ -19,7 +19,7 @@ const Description: React.FC<any> = (props: any) => {
             regulatory requirements and food safety requirements for our
             consumers. Accordingly, we meet world export standard and other
             crucial benchmarks like ISO (HACCP Inclusive), HALAL and environment
-            license. Bengal Meat offers Halal, Fresh, Hygienic and Superior
+            license. Bd Butch offers Halal, Fresh, Hygienic and Superior
             Quality meat of Cattle, Goat, Sheep, Chicken and Birds.
             <br />
             We aim to provide completely halal meat products throughout

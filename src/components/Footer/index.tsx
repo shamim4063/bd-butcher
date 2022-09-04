@@ -14,7 +14,7 @@ const Footer: React.FC<any> = (props: any) => {
               Phone: +880 1824-589241 || Email: bdbutch@outlook.com
             </small>
             <br />
-            <small> Developed with love by Beatnik </small>
+            <small> Developed with love by Springtide </small>
           </div>
         </div>
       </footer>
